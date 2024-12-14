@@ -215,9 +215,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="assets\scss\bootstrap.scss" />
     <Content Include="assets\scss\bootstrap\scss\bootstrap-grid.scss" />
@@ -301,11 +298,13 @@
     <Content Include="assets\scss\bootstrap\scss\_type.scss" />
     <Content Include="assets\scss\bootstrap\scss\_utilities.scss" />
     <Content Include="assets\scss\bootstrap\scss\_variables.scss" />
-    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\About\Index2.cshtml" />
     <Content Include="Views\Courses\Index.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Pages\OurTeam.cshtml" />
     <Content Include="Views\Pages\Testimonial.cshtml" />
+    <Content Include="Views\Shared\LayoutUser.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
