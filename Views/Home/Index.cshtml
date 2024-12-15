@@ -1,5 +1,12 @@
 ﻿@{
-    ViewBag.Title = "Home";
+    //1. Truyền string
+    ViewBag.Title = "Trang chủ";
+    ViewBag.Button = "Join Now";
+    //2. Truyền number
+    //ViewBag.Title = "Trang chủ";
+
+    //3. Truyền List
+    ViewBag.LstSinhVien = new List<string> { "Dương Mộng Khánh", "Khanh Maxio" };
     Layout = "~/Views/Shared/LayoutUser.cshtml";
 }
 
