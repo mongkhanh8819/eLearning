@@ -7,9 +7,16 @@
 
     //3. Truyền List
     ViewBag.LstSinhVien = new List<string> { "Dương Mộng Khánh", "Khanh Maxio" };
+
+    //4. Active menu
+    ViewBag.active = 1;
+
+
+    
     Layout = "~/Views/Shared/LayoutUser.cshtml";
 }
 
+@*Truyền cho RenderBody*@
 <main>
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5">
@@ -410,3 +417,16 @@
     </div>
     <!-- Testimonial End -->
 </main>
+
+
+@*Truyền cho Section*@
+@section LienHe{
+    <div class="col-lg-3 col-md-6">
+        <h4 class="text-white mb-3">Truy cập nhanh</h4>
+        <a class="btn btn-link" href="">About Us</a>
+        <a class="btn btn-link" href="">Contact Us</a>
+        <a class="btn btn-link" href="">Privacy Policy</a>
+        <a class="btn btn-link" href="">Terms & Condition</a>
+        <a class="btn btn-link" href="">FAQs & Help</a>
+    </div>
+}
