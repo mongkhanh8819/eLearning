@@ -62,19 +62,17 @@
                 @*cách 2: dùng biểu thức 3 ngôi*@
                 <a href="~/" class="nav-item nav-link @(ViewBag.active == 1 ? "active" : " ")">Home</a>
                 <a href="~/About" class="nav-item nav-link @(ViewBag.active == 2 ? "active" : " ") ">About</a>
-
-
-                <a href="~/Courses" class="nav-item nav-link">Courses</a>
+                <a href="~/Courses" class="nav-item nav-link @(ViewBag.active == 3 ? "active" : " ")">Courses</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <a href="#" class="nav-link dropdown-toggle @(ViewBag.active == 4 ? "active" : " ")" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="~/Pages/OurTeam" class="dropdown-item">Our Team</a>
-                        <a href="~/Pages/Testimonial" class="dropdown-item">Testimonial</a>
+                        <a href="~/Pages/OurTeam" class="dropdown-item @(ViewBag.active == 4 ? "active" : " ")">Our Team</a>
+                        <a href="~/Pages/Testimonial" class="dropdown-item @(ViewBag.active == 5 ? "active" : " ")">Testimonial</a>
                     </div>
                 </div>
-                <a href="~/Contact" class="nav-item nav-link">Contact</a>
+                <a href="~/Contact" class="nav-item nav-link @(ViewBag.active == 6 ? "active" : " ")">Contact</a>
             </div>
-            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">@ViewBag.Button<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
 
